@@ -11,7 +11,7 @@ X = df.iloc[:, :-1]
 y = df.iloc[:, -1]
 
 # Train model (ensure you change this for other branches)
-model = LogisticRegression(random_state=42)
+model = LogisticRegression(random_state=42, max_iter=2000)
 model.fit(X, y)
 preds = model.predict(X)
 
